@@ -13,10 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var timerbutton: UIButton!
     
-    let imageSource: [String] = ["cat2", "cat", "test", "square", "gold2", "gold", "rogotype", "taikiS", "doto"]
+    let imageSource: [String] = ["square", "rogotype", "taikiS", "doto", "company", "runhappy"]
     
     var index: Int = 0
     var timer: Timer!
+    var playflg: Bool?
     
     //画像アスペクト比に合わせたimageViewを作成する
     func settingview() {
@@ -45,6 +46,26 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         //viewDidLoadでは.frameが決定していないのでここに記載
         settingview()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToDetail" {
+            let DVC: detailViewController = segue.destination as! detailViewController
+            
+            if timer != nil {
+                timer.invalidate()  //タイマーを止める
+                timer = nil         //再度起動できるようnilを設定
+                timerbutton.setTitle("再生", for: UIControl.State.normal)
+                timerbutton.backgroundColor = UIColor(red: 97/255, green: 186/255, blue: 219/255, alpha: 1.0)
+                playflg = true
+            } else {
+                playflg = false
+            }
+    
+            //データ受け渡し
+            DVC.imageSource = self.imageSource
+            DVC.index = self.index
+        }
     }
     
     override func viewDidLoad() {
@@ -112,7 +133,21 @@ class ViewController: UIViewController {
         }
     }
     
+
+    /*@IBAction func todetail(_ sender: Any) {
+        timer.invalidate()  //タイマーを止める
+        timer = nil         //再度起動できるようnilを設定
+        timerbutton.setTitle("再生", for: UIControl.State.normal)
+        timerbutton.backgroundColor = UIColor(red: 97/255, green: 186/255, blue: 219/255, alpha: 1.0)
+    }*/
     
+    @IBAction func unwindToTop(segue: UIStoryboardSegue) {
+        if playflg == true {
+            timer = Foundation.Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+            timerbutton.setTitle("停止", for: UIControl.State.normal)
+            timerbutton.backgroundColor = UIColor(red: 224/255, green: 98/255, blue: 119/255, alpha: 1.0)
+        }
+    }
     
 }
 
