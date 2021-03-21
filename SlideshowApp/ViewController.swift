@@ -133,14 +133,6 @@ class ViewController: UIViewController {
         }
     }
     
-
-    /*@IBAction func todetail(_ sender: Any) {
-        timer.invalidate()  //タイマーを止める
-        timer = nil         //再度起動できるようnilを設定
-        timerbutton.setTitle("再生", for: UIControl.State.normal)
-        timerbutton.backgroundColor = UIColor(red: 97/255, green: 186/255, blue: 219/255, alpha: 1.0)
-    }*/
-    
     @IBAction func unwindToTop(segue: UIStoryboardSegue) {
         if playflg == true {
             timer = Foundation.Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)

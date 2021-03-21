@@ -22,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="iXg-Dq-U7m">
-                                <rect key="frame" x="20" y="50" width="335" height="377"/>
+                                <rect key="frame" x="20" y="50" width="335" height="381"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="piI-sP-9D1">
-                                        <rect key="frame" x="0.0" y="6" width="335" height="365"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="piI-sP-9D1">
+                                        <rect key="frame" x="0.0" y="6" width="335" height="369"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -35,10 +35,10 @@
                                 </subviews>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Edf-Q6-zDZ">
-                                <rect key="frame" x="20" y="527" width="335" height="40"/>
+                                <rect key="frame" x="20" y="531" width="335" height="36"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4r-X6-jn3">
-                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="36"/>
                                         <fontDescription key="fontDescription" name="RoundedMplus1c-Medium" family="Rounded Mplus 1c" pointSize="20"/>
                                         <state key="normal" title="進む"/>
                                         <connections>
@@ -46,7 +46,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5l-KV-GhP">
-                                        <rect key="frame" x="111.5" y="0.0" width="112" height="40"/>
+                                        <rect key="frame" x="111.5" y="0.0" width="112" height="36"/>
                                         <fontDescription key="fontDescription" name="RoundedMplus1c-Medium" family="Rounded Mplus 1c" pointSize="20"/>
                                         <state key="normal" title="戻る"/>
                                         <connections>
@@ -54,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2v-VE-UTK">
-                                        <rect key="frame" x="223.5" y="0.0" width="111.5" height="40"/>
+                                        <rect key="frame" x="223.5" y="0.0" width="111.5" height="36"/>
                                         <color key="backgroundColor" red="0.38039215686274508" green="0.72941176470588232" blue="0.85882352941176465" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="RoundedMplus1c-Medium" family="Rounded Mplus 1c" pointSize="20"/>
                                         <state key="normal" title="再生">
@@ -104,34 +104,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CUH-5w-yAv">
-                                <rect key="frame" x="20" y="50" width="335" height="485"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpz-QD-XAL">
-                                <rect key="frame" x="82.5" y="575" width="210" height="42"/>
+                                <rect key="frame" x="82.5" y="600" width="210" height="42"/>
                                 <fontDescription key="fontDescription" name="RoundedMplus1c-Medium" family="Rounded Mplus 1c" pointSize="21"/>
                                 <state key="normal" title="スライドショーへ戻る"/>
                                 <connections>
                                     <segue destination="xIn-Rz-OE5" kind="unwind" unwindAction="unwindToTopWithSegue:" id="mI0-hR-h4M"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="qNa-dD-mYI">
+                                <rect key="frame" x="20" y="50" width="335" height="525"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFh-Nf-sx8">
+                                        <rect key="frame" x="0.0" y="8" width="335" height="509"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2fU-7g-txn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2fU-7g-txn" firstAttribute="trailing" secondItem="CUH-5w-yAv" secondAttribute="trailing" constant="20" id="69P-z8-LTQ"/>
-                            <constraint firstItem="CUH-5w-yAv" firstAttribute="centerX" secondItem="rSR-uc-zPg" secondAttribute="centerX" id="BIC-sJ-kln"/>
-                            <constraint firstItem="Qpz-QD-XAL" firstAttribute="top" secondItem="CUH-5w-yAv" secondAttribute="bottom" constant="40" id="Mt7-rk-WTA"/>
-                            <constraint firstItem="2fU-7g-txn" firstAttribute="bottom" secondItem="Qpz-QD-XAL" secondAttribute="bottom" constant="50" id="alp-AJ-UvJ"/>
-                            <constraint firstItem="CUH-5w-yAv" firstAttribute="leading" secondItem="2fU-7g-txn" secondAttribute="leading" constant="20" id="hUZ-wx-3ts"/>
-                            <constraint firstItem="CUH-5w-yAv" firstAttribute="top" secondItem="2fU-7g-txn" secondAttribute="top" constant="50" id="wCG-lB-09e"/>
-                            <constraint firstItem="Qpz-QD-XAL" firstAttribute="centerX" secondItem="rSR-uc-zPg" secondAttribute="centerX" id="z1S-WJ-D45"/>
+                            <constraint firstItem="Qpz-QD-XAL" firstAttribute="top" secondItem="qNa-dD-mYI" secondAttribute="bottom" constant="25" id="67X-Je-3uu"/>
+                            <constraint firstItem="2fU-7g-txn" firstAttribute="trailing" secondItem="qNa-dD-mYI" secondAttribute="trailing" constant="20" id="I8F-U5-fDi"/>
+                            <constraint firstItem="Qpz-QD-XAL" firstAttribute="centerX" secondItem="rSR-uc-zPg" secondAttribute="centerX" id="OTc-0k-h9G"/>
+                            <constraint firstItem="qNa-dD-mYI" firstAttribute="top" secondItem="2fU-7g-txn" secondAttribute="top" constant="50" id="P11-vD-reZ"/>
+                            <constraint firstItem="qNa-dD-mYI" firstAttribute="leading" secondItem="2fU-7g-txn" secondAttribute="leading" constant="20" id="osw-bA-cHG"/>
+                            <constraint firstItem="2fU-7g-txn" firstAttribute="bottom" secondItem="Qpz-QD-XAL" secondAttribute="bottom" constant="25" id="r6Y-fs-VeV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zL8-Yc-4yv"/>
                     <connections>
-                        <outlet property="ImageView" destination="CUH-5w-yAv" id="sxV-kQ-5f0"/>
+                        <outlet property="ImageView" destination="vFh-Nf-sx8" id="8F0-C2-NTT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oJ-Fh-Ky1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -143,9 +148,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

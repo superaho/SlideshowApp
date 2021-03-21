@@ -8,6 +8,7 @@
 import UIKit
 
 class detailViewController: UIViewController {
+    
     @IBOutlet weak var ImageView: UIImageView!
     
     var imageSource: [String]?
