@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B07B331126088BDA0029CEC1 /* company.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B07B331026088BDA0029CEC1 /* company.jpeg */; };
+		B07B331426088C0A0029CEC1 /* gold.png in Resources */ = {isa = PBXBuildFile; fileRef = B07B331326088C0A0029CEC1 /* gold.png */; };
+		B07B331726088C200029CEC1 /* doto.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B07B331626088C200029CEC1 /* doto.jpeg */; };
+		B07B331A26088C370029CEC1 /* logotype.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B07B331926088C370029CEC1 /* logotype.jpeg */; };
+		B07B331D26088C4C0029CEC1 /* TaikiS.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B07B331C26088C4C0029CEC1 /* TaikiS.jpeg */; };
+		B07B332026088CE40029CEC1 /* TaikiS2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B07B331F26088CE40029CEC1 /* TaikiS2.jpg */; };
+		B07B332326088D010029CEC1 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = B07B332226088D010029CEC1 /* square.png */; };
 		B0BF473426044C95005933E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF473326044C95005933E0 /* AppDelegate.swift */; };
 		B0BF474026044C95005933E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BF473E26044C95005933E0 /* LaunchScreen.storyboard */; };
 		B0BF475126044D2F005933E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BF475026044D2F005933E0 /* Main.storyboard */; };
@@ -18,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B07B331026088BDA0029CEC1 /* company.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = company.jpeg; sourceTree = "<group>"; };
+		B07B331326088C0A0029CEC1 /* gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold.png; sourceTree = "<group>"; };
+		B07B331626088C200029CEC1 /* doto.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doto.jpeg; sourceTree = "<group>"; };
+		B07B331926088C370029CEC1 /* logotype.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logotype.jpeg; sourceTree = "<group>"; };
+		B07B331C26088C4C0029CEC1 /* TaikiS.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TaikiS.jpeg; sourceTree = "<group>"; };
+		B07B331F26088CE40029CEC1 /* TaikiS2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TaikiS2.jpg; sourceTree = "<group>"; };
+		B07B332226088D010029CEC1 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
 		B0BF473026044C95005933E0 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BF473326044C95005933E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BF473F26044C95005933E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +83,13 @@
 				B0BF477526045A23005933E0 /* ViewController.swift */,
 				B0BF478026045BAB005933E0 /* detailViewController.swift */,
 				B0BF476826044FD0005933E0 /* Info.plist */,
+				B07B331026088BDA0029CEC1 /* company.jpeg */,
+				B07B331326088C0A0029CEC1 /* gold.png */,
+				B07B331626088C200029CEC1 /* doto.jpeg */,
+				B07B331926088C370029CEC1 /* logotype.jpeg */,
+				B07B332226088D010029CEC1 /* square.png */,
+				B07B331C26088C4C0029CEC1 /* TaikiS.jpeg */,
+				B07B331F26088CE40029CEC1 /* TaikiS2.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -138,10 +159,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07B331426088C0A0029CEC1 /* gold.png in Resources */,
+				B07B331726088C200029CEC1 /* doto.jpeg in Resources */,
 				B0BF4772260459AD005933E0 /* MPLUSRounded1c-Medium.ttf in Resources */,
 				B0BF474026044C95005933E0 /* LaunchScreen.storyboard in Resources */,
+				B07B332326088D010029CEC1 /* square.png in Resources */,
 				B0BF475126044D2F005933E0 /* Main.storyboard in Resources */,
+				B07B332026088CE40029CEC1 /* TaikiS2.jpg in Resources */,
+				B07B331A26088C370029CEC1 /* logotype.jpeg in Resources */,
+				B07B331126088BDA0029CEC1 /* company.jpeg in Resources */,
 				B0BF477926045A78005933E0 /* Assets.xcassets in Resources */,
+				B07B331D26088C4C0029CEC1 /* TaikiS.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

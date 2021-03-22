@@ -12,14 +12,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var SuperView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var timerbutton: UIButton!
+    @IBOutlet weak var nextbutton: UIButton!
+    @IBOutlet weak var backbutton: UIButton!
     
-    let imageSource: [String] = ["square", "rogotype", "taikiS", "doto", "company", "runhappy"]
+    let imageSource: [String] = ["square.png", "logotype.jpeg", "taikiS.jpeg", "doto.jpeg", "company.jpeg", "TaikiS2.jpg", "gold"]
     
     var index: Int = 0
     var timer: Timer!
     var playflg: Bool?
     
-    //画像アスペクト比に合わせたimageViewを作成する
+    //画像サイズに合わせたimageViewを作成する
     func settingview() {
         let viewwidth = SuperView.frame.size.width
         let viewheight = SuperView.frame.size.height
@@ -77,6 +79,7 @@ class ViewController: UIViewController {
     }
     //「進む」を押した時に呼ばれる
     @IBAction func next(_ sender: Any) {
+        //止まってる時だけ
         if timer == nil {
             //最後の要素になったら添字を０に
             if index + 1 == imageSource.count {
@@ -113,11 +116,17 @@ class ViewController: UIViewController {
             timer = Foundation.Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
             timerbutton.setTitle("停止", for: UIControl.State.normal)
             timerbutton.backgroundColor = UIColor(red: 224/255, green: 98/255, blue: 119/255, alpha: 1.0)
+            //進む、戻るを押せなくする
+            nextbutton.isEnabled = false
+            backbutton.isEnabled = false
         } else {                //起動してる時の処理
             timer.invalidate()  //タイマーを止める
             timer = nil         //再度起動できるようnilを設定
             timerbutton.setTitle("再生", for: UIControl.State.normal)
             timerbutton.backgroundColor = UIColor(red: 97/255, green: 186/255, blue: 219/255, alpha: 1.0)
+            //進む、戻るを押せるようにする
+            nextbutton.isEnabled = true
+            backbutton.isEnabled = true
         }
     }
     
@@ -134,6 +143,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwindToTop(segue: UIStoryboardSegue) {
+        //再生状態で戻ったら再開される
         if playflg == true {
             timer = Foundation.Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
             timerbutton.setTitle("停止", for: UIControl.State.normal)

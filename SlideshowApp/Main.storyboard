@@ -22,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="iXg-Dq-U7m">
-                                <rect key="frame" x="20" y="50" width="335" height="381"/>
+                                <rect key="frame" x="20" y="50" width="335" height="377"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="piI-sP-9D1">
-                                        <rect key="frame" x="0.0" y="6" width="335" height="369"/>
+                                        <rect key="frame" x="0.0" y="6" width="335" height="365"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -35,10 +35,10 @@
                                 </subviews>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Edf-Q6-zDZ">
-                                <rect key="frame" x="20" y="531" width="335" height="36"/>
+                                <rect key="frame" x="20" y="527" width="335" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4r-X6-jn3">
-                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="40"/>
                                         <fontDescription key="fontDescription" name="RoundedMplus1c-Medium" family="Rounded Mplus 1c" pointSize="20"/>
                                         <state key="normal" title="進む"/>
                                         <connections>
@@ -46,7 +46,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5l-KV-GhP">
-                                        <rect key="frame" x="111.5" y="0.0" width="112" height="36"/>
+                                        <rect key="frame" x="111.5" y="0.0" width="112" height="40"/>
                                         <fontDescription key="fontDescription" name="RoundedMplus1c-Medium" family="Rounded Mplus 1c" pointSize="20"/>
                                         <state key="normal" title="戻る"/>
                                         <connections>
@@ -54,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2v-VE-UTK">
-                                        <rect key="frame" x="223.5" y="0.0" width="111.5" height="36"/>
+                                        <rect key="frame" x="223.5" y="0.0" width="111.5" height="40"/>
                                         <color key="backgroundColor" red="0.38039215686274508" green="0.72941176470588232" blue="0.85882352941176465" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="RoundedMplus1c-Medium" family="Rounded Mplus 1c" pointSize="20"/>
                                         <state key="normal" title="再生">
@@ -82,7 +82,9 @@
                     </view>
                     <connections>
                         <outlet property="SuperView" destination="iXg-Dq-U7m" id="yKL-tR-WN7"/>
+                        <outlet property="backbutton" destination="T5l-KV-GhP" id="bsa-Jb-m4B"/>
                         <outlet property="imageView" destination="piI-sP-9D1" id="YCT-g9-3HG"/>
+                        <outlet property="nextbutton" destination="b4r-X6-jn3" id="8jm-Jv-frF"/>
                         <outlet property="timerbutton" destination="Z2v-VE-UTK" id="uGf-Xz-qI7"/>
                     </connections>
                 </viewController>
