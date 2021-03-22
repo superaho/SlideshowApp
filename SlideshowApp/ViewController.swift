@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextbutton: UIButton!
     @IBOutlet weak var backbutton: UIButton!
     
-    let imageSource: [String] = ["square.png", "logotype.jpeg", "taikiS.jpeg", "doto.jpeg", "company.jpeg", "TaikiS2.jpg", "gold"]
+    let imageSource: [String] = ["square.png", "logotype.jpeg", "TaikiS.jpeg", "doto.jpeg", "company.jpeg", "TaikiS2.jpg", "gold.png"]
     
     var index: Int = 0
     var timer: Timer!
